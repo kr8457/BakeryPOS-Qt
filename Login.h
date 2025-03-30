@@ -5,7 +5,7 @@
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
-class MainWindow;
+class Login;
 }
 QT_END_NAMESPACE
 
@@ -18,6 +18,6 @@ public:
     ~Login();
 
 private:
-    Ui::MainWindow *ui;
+    Ui::Login *ui;
 };
 #endif // LOGIN_H

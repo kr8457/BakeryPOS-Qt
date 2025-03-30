@@ -1,88 +1,143 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>MainWindow</class>
- <widget class="QMainWindow" name="MainWindow">
+ <class>Login</class>
+ <widget class="QMainWindow" name="Login">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>384</width>
-    <height>600</height>
+    <width>401</width>
+    <height>559</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">BackColor = yellow;
-</string>
+   <string notr="true">QLineEdit {
+	border-radius: 5px;
+	background-color: rgb(203, 203, 203);
+	padding: 10px;
+	color: rgb(65, 65, 65);
+}
+
+QMainWindow {
+	background-color: white;
+}
+
+QPushButton {
+	border-radius: 10px;
+	background-color: #DCA983;
+	border:none;
+}
+
+QPushButton:hover {
+	background-color: E7C5AB
+}
+
+QCheckBox {
+	color: black;
+}
+
+QLabel {
+	color: #DCA983;
+	background-color: white; 
+}</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="loginButton">
     <property name="geometry">
      <rect>
-      <x>90</x>
-      <y>398</y>
-      <width>171</width>
+      <x>50</x>
+      <y>410</y>
+      <width>311</width>
       <height>51</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	background-color: #DCA983;
+	border: none;
+	color: white;
+	border-radius: 5px;
+}
+
+
+QPushButton:hover
+{
+	background-color: #E7C5AB;
+	color: white;
+}</string>
+    </property>
     <property name="text">
-     <string>LOGIN</string>
+     <string>Login</string>
     </property>
    </widget>
-   <widget class="QTextEdit" name="textEdit">
+   <widget class="QLabel" name="loginLabel">
     <property name="geometry">
      <rect>
-      <x>70</x>
-      <y>250</y>
-      <width>231</width>
-      <height>31</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QTextEdit" name="textEdit_2">
-    <property name="geometry">
-     <rect>
-      <x>70</x>
-      <y>180</y>
-      <width>231</width>
-      <height>31</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>130</x>
+      <x>50</x>
       <y>40</y>
-      <width>181</width>
+      <width>241</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>48</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Login</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="usernameLineEdit">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>200</y>
+      <width>311</width>
       <height>41</height>
      </rect>
     </property>
-    <property name="styleSheet">
-     <string notr="true">QWidget {
-    background-color: #2E2E2E; /* Dark Gray */
-    color: white; /* Text color */
-}
-</string>
+    <property name="placeholderText">
+     <string>Name</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="passwordLineEdit">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>270</y>
+      <width>311</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::EchoMode::Password</enum>
+    </property>
+    <property name="placeholderText">
+     <string>Password</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="seePasswordCheckbox">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>330</y>
+      <width>131</width>
+      <height>26</height>
+     </rect>
     </property>
     <property name="text">
-     <string>LOGIN</string>
+     <string>See Password</string>
     </property>
    </widget>
   </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>384</width>
-     <height>25</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
  <connections/>

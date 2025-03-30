@@ -3,7 +3,7 @@
 
 Login::Login(QWidget *parent)
     : QMainWindow(parent)
-    , ui(new Ui::MainWindow)
+    , ui(new Ui::Login)
 {
     ui->setupUi(this);
 }
