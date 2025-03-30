@@ -1,0 +1,26 @@
+# Ignore Qt Creator user-specific and temporary files
+*.pro.user
+*.pro.user.*
+*.qmake.stash
+
+# Ignore build directories
+build/
+*/build-*/
+
+# Ignore Qt Creator cache files
+.qtc_clangd/
+*.idx
+
+# Ignore compiled binaries
+*.exe
+*.dll
+*.o
+*.obj
+*.so
+*.a
+*.lib
+*.swp
+*.swo
+
+# Ignore OneDrive-specific temp files (if applicable)
+*.tmp
