@@ -14,10 +14,12 @@ Login::~Login()
 }
 
 
+//Hide and show password based on the state of checkbox
 void Login::on_seePasswordCheckbox_stateChanged(int arg1)
 {
     if(arg1 == Qt::Checked)
     {
+        //Qt::Normal means that text(password in this case) is visible
         ui->passwordLineEdit->setEchoMode(QLineEdit::Normal);
     }
     else
@@ -26,19 +28,19 @@ void Login::on_seePasswordCheckbox_stateChanged(int arg1)
     }
 }
 
-
+//check entered credential with actual credentials and allow or disallow entry based on that
 void Login::on_loginButton_clicked()
 {
-    QString username = ui->usernameLineEdit->text();
-    QString password = ui->passwordLineEdit->text();
+    QString entered_username = ui->usernameLineEdit->text();
+    QString entered_password = ui->passwordLineEdit->text();
 
-    if(username == "admin" && password == "1234")
+    if(entered_username == "admin" && entered_password == "1234")
     {
         QMessageBox::information(this, "Login Successful", "Welcome!");
     }
     else
     {
-        QMessageBox::information(this, "Login Failed", "Invalid Credentials!");
+        QMessageBox::warning(this, "Login Failed", "Invalid Credentials!");
     }
 }
 
