@@ -17,6 +17,10 @@ public:
     Login(QWidget *parent = nullptr);
     ~Login();
 
+private slots:
+
+    void on_seePasswordCheckbox_stateChanged(int arg1);
+
 private:
     Ui::Login *ui;
 };
