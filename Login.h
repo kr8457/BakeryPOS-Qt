@@ -2,6 +2,7 @@
 #define LOGIN_H
 
 #include <QMainWindow>
+#include <QMessageBox>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -20,6 +21,8 @@ public:
 private slots:
 
     void on_seePasswordCheckbox_stateChanged(int arg1);
+
+    void on_loginButton_clicked();
 
 private:
     Ui::Login *ui;

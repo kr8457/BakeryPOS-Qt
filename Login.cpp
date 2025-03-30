@@ -26,3 +26,19 @@ void Login::on_seePasswordCheckbox_stateChanged(int arg1)
     }
 }
 
+
+void Login::on_loginButton_clicked()
+{
+    QString username = ui->usernameLineEdit->text();
+    QString password = ui->passwordLineEdit->text();
+
+    if(username == "admin" && password == "1234")
+    {
+        QMessageBox::information(this, "Login Successful", "Welcome!");
+    }
+    else
+    {
+        QMessageBox::information(this, "Login Failed", "Invalid Credentials!");
+    }
+}
+
