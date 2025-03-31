@@ -1,5 +1,6 @@
 #include "Login.h"
 #include "ui_Login.h"
+#include "mainform.h"
 
 Login::Login(QWidget *parent)
     : QMainWindow(parent)
@@ -37,6 +38,9 @@ void Login::on_loginButton_clicked()
     if(entered_username == "admin" && entered_password == "1234")
     {
         QMessageBox::information(this, "Login Successful", "Welcome!");
+        Mainform *mf = new Mainform();
+        this->close();
+        mf->show();
     }
     else
     {
