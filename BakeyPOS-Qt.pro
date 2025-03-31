@@ -10,13 +10,16 @@ CONFIG += c++17
 
 SOURCES += \
     Login.cpp \
-    main.cpp
+    main.cpp \
+    mainform.cpp
 
 HEADERS += \
-    Login.h
+    Login.h \
+    mainform.h
 
 FORMS += \
-    Login.ui
+    Login.ui \
+    mainform.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
