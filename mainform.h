@@ -24,6 +24,8 @@ private slots:
 
     void on_invetory_manangement_btn_clicked();
 
+    void on_logout_btn_clicked();
+
 private:
     Ui::Mainform *ui;
 };

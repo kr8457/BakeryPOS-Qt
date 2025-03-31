@@ -150,7 +150,7 @@ QPushButton#logout_btn:hover
 }</string>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="dashboard_page">
      <property name="styleSheet">
@@ -230,13 +230,13 @@ QPushButton:hover {
 }
 </string>
      </property>
-     <widget class="QTableView" name="tableView">
+     <widget class="QTableView" name="usersTableView">
       <property name="geometry">
        <rect>
         <x>500</x>
         <y>0</y>
         <width>631</width>
-        <height>721</height>
+        <height>741</height>
        </rect>
       </property>
      </widget>
@@ -253,14 +253,14 @@ QPushButton:hover {
        <item>
         <layout class="QHBoxLayout" name="horizontalLayout">
          <item>
-          <widget class="QPushButton" name="user_management_btn_4">
+          <widget class="QPushButton" name="delete_user_btn">
            <property name="text">
             <string>Delete User</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QPushButton" name="user_management_btn_5">
+          <widget class="QPushButton" name="add_user_btn">
            <property name="text">
             <string>Add User</string>
            </property>
@@ -271,14 +271,14 @@ QPushButton:hover {
        <item>
         <layout class="QHBoxLayout" name="horizontalLayout_2">
          <item>
-          <widget class="QPushButton" name="user_management_btn_3">
+          <widget class="QPushButton" name="view_users_btn">
            <property name="text">
             <string>View Users</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QPushButton" name="user_management_btn_2">
+          <widget class="QPushButton" name="update_user_btn">
            <property name="text">
             <string>Update User</string>
            </property>
@@ -317,14 +317,14 @@ QPushButton:hover {
        <item>
         <layout class="QHBoxLayout" name="horizontalLayout_6">
          <item>
-          <widget class="QPushButton" name="pushButton_5">
+          <widget class="QPushButton" name="add_to_invoice_btn">
            <property name="text">
             <string>Add to invoice</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QPushButton" name="pushButton_6">
+          <widget class="QPushButton" name="remove_from_invoice_btn">
            <property name="text">
             <string>Remove form invoice</string>
            </property>
@@ -335,14 +335,14 @@ QPushButton:hover {
        <item>
         <layout class="QHBoxLayout" name="horizontalLayout_5">
          <item>
-          <widget class="QPushButton" name="pushButton_8">
+          <widget class="QPushButton" name="print_reciept_btn">
            <property name="text">
             <string>Print Receipt</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QPushButton" name="pushButton_7">
+          <widget class="QPushButton" name="clean_invoice_btn">
            <property name="text">
             <string>Clean Invoice</string>
            </property>
@@ -373,22 +373,22 @@ QPushButton:hover {
        <rect>
         <x>60</x>
         <y>300</y>
-        <width>341</width>
-        <height>391</height>
+        <width>441</width>
+        <height>401</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_2">
        <item>
         <layout class="QHBoxLayout" name="horizontalLayout_3">
          <item>
-          <widget class="QPushButton" name="pushButton">
+          <widget class="QPushButton" name="add_item_btn">
            <property name="text">
             <string>Add Item</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QPushButton" name="pushButton_2">
+          <widget class="QPushButton" name="remove_item_btn">
            <property name="text">
             <string>Remove Item</string>
            </property>
@@ -399,14 +399,14 @@ QPushButton:hover {
        <item>
         <layout class="QHBoxLayout" name="horizontalLayout_4">
          <item>
-          <widget class="QPushButton" name="pushButton_3">
+          <widget class="QPushButton" name="view_items_btn">
            <property name="text">
             <string>View All Items</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QPushButton" name="pushButton_4">
+          <widget class="QPushButton" name="search_items_btn">
            <property name="text">
             <string>Search Item</string>
            </property>
