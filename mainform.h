@@ -2,6 +2,9 @@
 #define MAINFORM_H
 
 #include <QMainWindow>
+#include <QtQuickWidgets/QQuickWidget>
+#include <QQmlEngine>
+
 
 namespace Ui {
 class Mainform;
@@ -10,6 +13,10 @@ class Mainform;
 class Mainform : public QMainWindow
 {
     Q_OBJECT
+
+    // Inside your Mainform class declaration
+private:
+    QQuickWidget *cashierView = nullptr;
 
 public:
     explicit Mainform(QWidget *parent = nullptr);
