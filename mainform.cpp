@@ -2,6 +2,12 @@
 #include "ui_mainform.h"
 #include "Login.h"
 #include <QMessageBox>
+#include <QQuickView>
+#include <QtQuickWidgets/QQuickWidget>
+#include <QQmlEngine>
+
+
+
 
 Mainform::Mainform(QWidget *parent)
     : QMainWindow(parent)
@@ -30,8 +36,18 @@ void Mainform::on_user_management_btn_clicked()
 
 void Mainform::on_cashier_form_btn_clicked()
 {
-    ui->pages->setCurrentIndex(2);
+    if (!cashierView) {
+        // Create the QQuickWidget only once
+        cashierView = new QQuickWidget(this);
+        cashierView->setSource(QUrl(QStringLiteral("qrc:/Cashier.qml")));
+        cashierView->setResizeMode(QQuickWidget::SizeRootObjectToView);
+        ui->pages->addWidget(cashierView);
+    }
+
+    // Switch to the cashier view
+    ui->pages->setCurrentWidget(cashierView);
 }
+
 
 
 void Mainform::on_invetory_manangement_btn_clicked()
