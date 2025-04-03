@@ -228,15 +228,25 @@ QPushButton:hover {
 	
 	background-color: rgb(145, 113, 68);
 }
-</string>
+
+QLineEdit {
+	border-radius: 5px;
+	background-color: rgb(203, 203, 203);
+	padding: 10px;
+	color: rgb(65, 65, 65);
+}
+
+QTableView {
+	background-color: rgb(220, 220, 220)
+}</string>
      </property>
      <widget class="QTableView" name="usersTableView">
       <property name="geometry">
        <rect>
-        <x>500</x>
-        <y>0</y>
-        <width>631</width>
-        <height>741</height>
+        <x>490</x>
+        <y>90</y>
+        <width>621</width>
+        <height>601</height>
        </rect>
       </property>
      </widget>
@@ -244,25 +254,32 @@ QPushButton:hover {
       <property name="geometry">
        <rect>
         <x>30</x>
-        <y>360</y>
+        <y>530</y>
         <width>438</width>
-        <height>331</height>
+        <height>170</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout">
        <item>
         <layout class="QHBoxLayout" name="horizontalLayout">
          <item>
-          <widget class="QPushButton" name="delete_user_btn">
+          <widget class="QPushButton" name="add_user_btn">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(101, 255, 114);</string>
+           </property>
            <property name="text">
-            <string>Delete User</string>
+            <string>Add User</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QPushButton" name="add_user_btn">
+          <widget class="QPushButton" name="delete_user_btn">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 38, 42);
+</string>
+           </property>
            <property name="text">
-            <string>Add User</string>
+            <string>Delete User</string>
            </property>
           </widget>
          </item>
@@ -288,6 +305,104 @@ QPushButton:hover {
        </item>
       </layout>
      </widget>
+     <widget class="QWidget" name="">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>90</y>
+        <width>441</width>
+        <height>391</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_4" stretch="0,0,0,0,0">
+       <property name="spacing">
+        <number>30</number>
+       </property>
+       <property name="sizeConstraint">
+        <enum>QLayout::SizeConstraint::SetDefaultConstraint</enum>
+       </property>
+       <item>
+        <widget class="QLineEdit" name="first_name_line_edit">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="placeholderText">
+          <string>First Name</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="last_name_line_edit">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="placeholderText">
+          <string>Last Name</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="phone_no_line_edit">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="placeholderText">
+          <string>Phone Number</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="age_line_edit">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="placeholderText">
+          <string>Age</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="cnic_line_edit">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="placeholderText">
+          <string>CNIC</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
     </widget>
     <widget class="QWidget" name="cashier_form_page">
      <property name="styleSheet">
@@ -308,9 +423,9 @@ QPushButton:hover {
       <property name="geometry">
        <rect>
         <x>40</x>
-        <y>280</y>
+        <y>440</y>
         <width>421</width>
-        <height>431</height>
+        <height>271</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_3">
@@ -352,6 +467,19 @@ QPushButton:hover {
        </item>
       </layout>
      </widget>
+     <widget class="QLineEdit" name="lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>130</y>
+        <width>421</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Order ID (Autoincrement)</string>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="inventory_management_page">
      <property name="styleSheet">
@@ -371,10 +499,10 @@ QPushButton:hover {
      <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
-        <x>60</x>
-        <y>300</y>
-        <width>441</width>
-        <height>401</height>
+        <x>50</x>
+        <y>560</y>
+        <width>371</width>
+        <height>131</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_2">
