@@ -150,7 +150,7 @@ QPushButton#logout_btn:hover
 }</string>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>3</number>
     </property>
     <widget class="QWidget" name="dashboard_page">
      <property name="styleSheet">
@@ -311,12 +311,12 @@ QTableView {
         <x>30</x>
         <y>90</y>
         <width>441</width>
-        <height>391</height>
+        <height>412</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_4" stretch="0,0,0,0,0">
        <property name="spacing">
-        <number>30</number>
+        <number>50</number>
        </property>
        <property name="sizeConstraint">
         <enum>QLayout::SizeConstraint::SetDefaultConstraint</enum>
@@ -494,53 +494,142 @@ QPushButton:hover {
 	
 	background-color: rgb(145, 113, 68);
 }
-</string>
+
+
+QLineEdit {
+	border-radius: 5px;
+	background-color: rgb(203, 203, 203);
+	padding: 10px;
+	color: rgb(65, 65, 65);
+}
+QTableView {
+	background-color: rgb(220, 220, 220)
+}</string>
      </property>
-     <widget class="QWidget" name="layoutWidget">
+     <widget class="QPushButton" name="see_report_btn">
       <property name="geometry">
        <rect>
-        <x>50</x>
-        <y>560</y>
-        <width>371</width>
-        <height>131</height>
+        <x>30</x>
+        <y>650</y>
+        <width>191</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>See Report</string>
+      </property>
+     </widget>
+     <widget class="QTableView" name="productTableView">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>60</y>
+        <width>671</width>
+        <height>641</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QWidget" name="">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>570</y>
+        <width>391</width>
+        <height>52</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QPushButton" name="add_item_btn">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(101, 255, 114);</string>
+         </property>
+         <property name="text">
+          <string>Add Item</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="remove_item_btn">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 38, 42);
+</string>
+         </property>
+         <property name="text">
+          <string>Remove Item</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>50</y>
+        <width>391</width>
+        <height>501</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_2">
        <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_3">
-         <item>
-          <widget class="QPushButton" name="add_item_btn">
-           <property name="text">
-            <string>Add Item</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="remove_item_btn">
-           <property name="text">
-            <string>Remove Item</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
+        <widget class="QLineEdit" name="pid_line_edit">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="placeholderText">
+          <string>PID</string>
+         </property>
+        </widget>
        </item>
        <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_4">
-         <item>
-          <widget class="QPushButton" name="view_items_btn">
-           <property name="text">
-            <string>View All Items</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="search_items_btn">
-           <property name="text">
-            <string>Search Item</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
+        <widget class="QLineEdit" name="expiry_date_line_edit_2">
+         <property name="placeholderText">
+          <string>Barcode</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="product_bame_line_edit">
+         <property name="placeholderText">
+          <string>Product Name</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="price_line_edit">
+         <property name="placeholderText">
+          <string>Price</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="unit_line_edit">
+         <property name="placeholderText">
+          <string>Unit</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="stock_quantity_line_edit">
+         <property name="placeholderText">
+          <string>Stock Quantity</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="category_line_edit">
+         <property name="placeholderText">
+          <string>Category</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="expiry_date_line_edit">
+         <property name="placeholderText">
+          <string>Expiry Date</string>
+         </property>
+        </widget>
        </item>
       </layout>
      </widget>
