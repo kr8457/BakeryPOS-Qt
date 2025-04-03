@@ -150,7 +150,7 @@ QPushButton#logout_btn:hover
 }</string>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>3</number>
     </property>
     <widget class="QWidget" name="dashboard_page">
      <property name="styleSheet">
@@ -523,9 +523,9 @@ QTableView {
       <property name="geometry">
        <rect>
         <x>440</x>
-        <y>90</y>
-        <width>681</width>
-        <height>611</height>
+        <y>60</y>
+        <width>671</width>
+        <height>641</height>
        </rect>
       </property>
      </widget>
@@ -566,35 +566,9 @@ QTableView {
       <property name="geometry">
        <rect>
         <x>30</x>
-        <y>20</y>
+        <y>50</y>
         <width>391</width>
-        <height>52</height>
-       </rect>
-      </property>
-      <layout class="QHBoxLayout" name="horizontalLayout_4">
-       <item>
-        <widget class="QPushButton" name="manual_btn">
-         <property name="text">
-          <string>Manual</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="barcode_btn">
-         <property name="text">
-          <string>Barcode</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-     <widget class="QWidget" name="">
-      <property name="geometry">
-       <rect>
-        <x>30</x>
-        <y>90</y>
-        <width>391</width>
-        <height>461</height>
+        <height>501</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -605,6 +579,13 @@ QTableView {
          </property>
          <property name="placeholderText">
           <string>PID</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="expiry_date_line_edit_2">
+         <property name="placeholderText">
+          <string>Barcode</string>
          </property>
         </widget>
        </item>
