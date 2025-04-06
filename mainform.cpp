@@ -15,6 +15,7 @@ Mainform::Mainform(QWidget *parent)
 {
     ui->setupUi(this);
     ui->pages->setCurrentIndex(0);
+    ui->report_type_page->setCurrentIndex(0);
 }
 
 Mainform::~Mainform()
@@ -64,5 +65,29 @@ void Mainform::on_logout_btn_clicked()
         Login *lgin = new Login();
         lgin->show();
     }
+}
+
+
+void Mainform::on_reports_clicked()
+{
+    ui->pages->setCurrentIndex(4);
+}
+
+
+void Mainform::on_daily_btn_clicked()
+{
+    ui->report_type_page->setCurrentIndex(0);
+}
+
+
+void Mainform::on_monthly_btn_clicked()
+{
+    ui->report_type_page->setCurrentIndex(1);
+}
+
+
+void Mainform::on_yearly_btn_clicked()
+{
+    ui->report_type_page->setCurrentIndex(2);
 }
 

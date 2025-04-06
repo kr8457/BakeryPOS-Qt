@@ -33,6 +33,14 @@ private slots:
 
     void on_logout_btn_clicked();
 
+    void on_reports_clicked();
+
+    void on_daily_btn_clicked();
+
+    void on_monthly_btn_clicked();
+
+    void on_yearly_btn_clicked();
+
 private:
     Ui::Mainform *ui;
 };

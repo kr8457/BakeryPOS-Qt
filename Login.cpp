@@ -9,6 +9,7 @@ Login::Login(QWidget *parent)
     ui->setupUi(this);
 }
 
+
 Login::~Login()
 {
     delete ui;
